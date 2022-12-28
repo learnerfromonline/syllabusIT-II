@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS-SYLLABUS</title>
+    <style>
+      
+        spam{
+            color:blue;
+            background:whitesmoke;
+        }
+        body{
+            background:linear-gradient(yellow,green,pink,blue);
+            background-repeat: no-repeat;
+            max-width:fit-content;
+            height:fit-content;
+        } 
+      
+        details{
+            color:midnightblue;
+            font-size:30px;
+            background:rgb(209, 190, 14);
+            margin-right:10%;
+        }
+        h1{
+            position: relative;
+            font-size: 30px;
+            border:10px double yellow;
+            color:whitesmoke;
+            text-align: center;
+            background-color: black;
+            border-radius: 30px;
+            padding-left: 30px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top:30px;
+            margin-bottom: 50px;
+        }
+     
+       div a{
+            color:sandybrown;
+            background-color:black;
+            border-radius: 3px;
+            margin-top:15hv;
+            text-decoration: none;
+            border-style: double;
+            font-size: 50px;
+            border-radius: 400px;
+
+        }
+        a{
+            display:block;
+            margin-top:30px;
+            margin-right:30%;
+            margin-left:70px;
+            text-align: center;
+        }
+ 
+        h1:hover{
+            color:white;
+            background-color:black;
+            border-color:white;
+            margin-left:130px;
+            margin-right:130px;
+            margin-top: 20px;
+            border:6px dashed white;
+        }
+        .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 50px #fff, 0 0 20px rgb(224, 8, 8), 0 0 30px #e60073;
+ }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+@media (max-width:410px) {
+   h1{
+
+            position: relative;                 
+            border:10px double yellow;
+            color:whitesmoke;
+            text-align: center;
+            background-color: black;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-left: 60px;
+            margin-right: 20px;
+            margin-top:30px;
+            margin-bottom: 50px;
+        }
+    
+        .glow {
+        
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  margin-right: 10px;
+  z-index: 2;
+}
+h1:hover{
+    color:white;
+            background-color:black;
+            border-color:white;
+            margin-left:20px;
+            margin-right:30px;
+            margin-top: 20px;
+            border:6px dashed white;
+            transition: 1s ease-in-out;
+
+}
+details{
+    position:relative;
+    z-index: 2;
+    background-color: black;
+    color:white;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 50px #fff, 0 0 20px rgb(224, 8, 8), 0 0 30px #e60073;
+ }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+div a{
+            
+            color:sandybrown;
+            background-color:black;
+            border-radius: 6px;
+            margin-top:15hv;
+            text-decoration: none;
+            border-style: double;
+            font-size: 50px;
+            border-radius: 400px;
+            z-index: 2;
+
+        }
+        a{
+            position: relative;
+            display:block;
+            margin-top:30px;
+            margin-right:20%;
+            margin-left:70px;
+            text-align: center;
+            z-index: 2;
+        }
+       
+        div a:active{
+            color: black;
+            background-color: greenyellow;
+            
+        }
+        div a:hover{
+            color:white;
+        }
+        section{
+            position: absolute;
+            margin: 0px;
+            float:top;
+            margin-top:-20px;
+            display: inline-block;
+
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            flex-wrap:wrap;
+            
+            
+         
+            
+        }
+        section span{
+           position:relative;
+            display:block;
+            width:calc(10vw - 3px);
+            height:calc(10vw - 2px);
+            background: black;
+            z-index: 2;
+            transition: 1.5s;
+            overflow: hidden;
+        }
+        section:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#000,#0f0,#000);
+            animation:animate 3s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform:translateY(-100%)
+            }
+            40%{
+                background: yellowgreen;
+                transform:translateY(100%) ;
+            }
+            100%{
+                transform:translateY(100%)
+            }
+        }
+        body{
+            background: rgb(43, 40, 40);
+
+        }
+        
+        section span:hover{
+            background:#0f0;
+            
+            visibility: visible;
+            transition: 0s;
+        }
+       
+}
+    </style>
+</head>
+<body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+       
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+     
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        
+
+    </section>
+    <div class="division">
+    <h1 class="glow">DATABASE MANAGEMENT SYSTEM</h1>
+    <details>
+        <p>THIS WEB-SITE HELPS YOU TO GAIN MORE KNOWLADGE ON DATABASE MANAGEMENT SYSTEM</p>
+        <ol><li>
+            THIS INCLUDES ALL UNITS PDF's REGUARDING THE <spam>DBMS</spam> IN OUR SYLLABUS
+       </li> </ol>
+    </details><br><br><br><br><br>
+    <div>
+    <a class="hlo" href="https://drive.google.com/file/d/1fWU9tq8YzL84CsOh8a1r_6raujSVV2KP/view?usp=sharing">UNIT-I</a>
+    <a class="hlo2" href="https://drive.google.com/file/d/1LimMVAuIVMQmKmg3wPpIjNQizYmFcZXj/view?usp=sharing">UNIT-II</a>
+    <a class="hlo3" href="https://drive.google.com/file/d/1VTewqjvGymWFoY0iR9yLv2NnGsZOEkog/view?usp=sharing">UNIT-III</a>
+    </div>
+    </div>
+    
+</body>
+</html>

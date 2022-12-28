@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADE-SYLLABUS</title>
+    <style>
+        spam{
+            color:green;
+            background-color: yellow;
+            
+        }
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background:linear-gradient(orange,yellow);
+            background-repeat: no-repeat;
+            height: 100%;
+            font-weight: 700;
+
+
+        }
+        h1{
+            font-size: 30px;
+            border:10px double yellow;
+            color:whitesmoke;
+            text-align: center;
+            background-color: black;
+            border-radius: 30px;
+            padding-left: 30px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top:30px;
+            margin-bottom: 50px;
+        }
+         h1:hover{
+            color:white;
+            background-color:black;
+            border-color:white;
+            margin-left:130px;
+            margin-right:130px;
+            margin-top: 20px;
+            border:6px dashed white;
+        }
+        .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 50px #fff, 0 0 20px rgb(183, 211, 26), 0 0 30px #d6e412;
+ }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b9d80b, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #31b494, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+div a{
+            color:sandybrown;
+            background-color:black;
+            border-radius: 3px;
+            margin-top:15hv;
+            text-decoration: none;
+            border-style: double;
+            font-size: 50px;
+            border-radius: 400px;
+
+        }
+        a{
+            display:block;
+            margin-top:30px;
+            margin-right:30%;
+            margin-left:70px;
+            text-align: center;
+        }
+        div a:hover{
+            color:green;
+            background:url(https://media.istockphoto.com/photos/futuristic-digital-block-chain-background-picture-id1212911887?b=1&k=20&m=1212911887&s=612x612&w=0&h=gXEH3M0b4zMvQzONRaU13ErOR6bgV0BCa101skIr27Y=);
+            border-color: black;
+        }
+        div a:active{
+            color:black;
+            background-color: yellowgreen;
+        }
+        @media (max-width:410px){
+            h1{
+
+position: relative;                 
+border:10px double yellow;
+color:whitesmoke;
+text-align: center;
+background-color: black;
+border-radius: 30px;
+padding-left: 30px;
+padding-right: 30px;
+margin-left: 60px;
+margin-right: 20px;
+margin-top:30px;
+margin-bottom: 50px;
+}
+
+.glow {
+
+font-size: 20px;
+color: #fff;
+text-align: center;
+animation: glow 1s ease-in-out infinite alternate;
+margin-right: 10px;
+z-index: 2;
+}
+h1:hover{
+color:white;
+background-color:black;
+border-color:white;
+margin-left:20px;
+margin-right:30px;
+margin-top: 20px;
+border:6px dashed white;
+transition: 1s ease-in-out;
+
+}
+details{
+position:relative;
+z-index: 2;
+background-color: black;
+color:white;
+}
+
+@-webkit-keyframes glow {
+from {
+text-shadow: 0 0 50px #fff, 0 0 20px rgb(224, 8, 8), 0 0 30px #e60073;
+}
+
+to {
+text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}
+div a{
+
+color:sandybrown;
+background-color:black;
+border-radius: 6px;
+margin-top:15hv;
+text-decoration: none;
+border-style: double;
+font-size: 50px;
+border-radius: 400px;
+z-index: 2;
+
+}
+a{
+position: relative;
+display:block;
+margin-top:30px;
+margin-right:20%;
+margin-left:20px;
+text-align: center;
+z-index: 2;
+}
+
+div a:active{
+color: black;
+background-color: greenyellow;
+
+}
+div a:hover{
+color:white;
+}
+section{
+position: absolute;
+margin: 0px;
+float:top;
+margin-top:-20px;
+display:block;
+
+width: 100vw;
+height: 100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+gap: 2px;
+flex-wrap:wrap;
+
+
+
+
+}
+section span{
+position:relative;
+display:block;
+width:calc(20vw - 2px);
+height:calc(20vw - 2px);
+background: black;
+z-index: 2;
+transition: 1.5s;
+}
+section:before{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(#000,rgb(223, 42, 11),#000);
+animation:animate 3s linear infinite;
+}
+@keyframes animate{
+0%{
+    transform:translateY(-100%)
+}
+40%{
+    background: rgb(223, 12, 23);
+    transform:translateY(100%) ;
+}
+100%{
+    transform:translateY(100%)
+}
+}
+body{
+background: rgb(43, 40, 40);
+
+}
+
+section span:hover{
+background:rgb(98, 184, 41);
+
+visibility: visible;
+transition: 0s;
+}
+marquee{
+    color:white;
+    position: absolute;
+    z-index: 2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <h1 class="glow">ANALOG AND DIGITAL ELECTRONICS</h1>
+    <details>
+        IN THIS WEB PAGE ALL UNITS<spam> ADE</spam> SYLLABUS AVALIBLE
+    </details>
+    <div>
+        <a class="hlo"  href="https://drive.google.com/file/d/1zZlK9VWobZBMNu8noXQkUWs8YsMl2K6X/view?usp=sharing"> UNIT-I</a>
+        <a class="hlo1" href="https://drive.google.com/file/d/1jfUf_kywIHLqqkTI7Lqnnu-ZzA1LC3-N/view?usp=sharing"> UNIT-II</a>
+        <a class="hlo2" href="https://drive.google.com/file/d/1SAHy063ZHMx79aznw0Ad_VQ-mgeNGGPK/view?usp=sharing"> UNIT-III</a>
+        <a class="hlo4" herf="https://drive.google.com/file/d/1Uvd7AgkNUUBqFQ7VFI0uJ6xw-zfQRhw9/view?usp=sharing"> UNIT IV-V</a>
+        
+    </div>
+</body>
+</html>
